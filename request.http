@@ -1,0 +1,25 @@
+POST http://localhost:4040/products
+content-type: application/json
+
+{
+  "name": "Controle de Xbox Series X",
+  "price": 450
+}
+
+###
+GET http://localhost:4040/products/
+
+###
+GET http://localhost:4040/products/238bf243-9d91-4e05-818a-fbbbdd074eb7
+
+###
+PUT http://localhost:4040/products/0da1d47a-fe4a-4f7f-9586-44f0f9359d01
+content-type: application/json
+
+{
+  "name": "Fone de ouvido JBL Live!",
+  "price": 300
+}
+
+###
+DELETE http://localhost:4040/products/0da1d47a-fe4a-4f7f-9586-44f0f9359d01
